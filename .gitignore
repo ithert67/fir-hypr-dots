@@ -1,0 +1,11 @@
+# caches
+**/cache/
+**/*cache*
+
+# logs
+**/*.log
+
+# secrets
+**/*token*
+**/*secret*
+**/*password*
