@@ -4,8 +4,3 @@
 
 # logs
 **/*.log
-
-# secrets
-**/*token*
-**/*secret*
-**/*password*
