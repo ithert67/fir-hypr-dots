@@ -1,4 +1,6 @@
-show=drun
-width=500
-height=300
-prompt=>
+allow_images=true
+hide_scroll=true
+no_actions=false
+term=kitty
+mode=drun
+--show
