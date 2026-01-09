@@ -1,12 +1,12 @@
 [global]
-# monitor & position
+# Монитор и позиция
 monitor = 0
 follow = mouse
 origin = top-right
 offset = (16, 16)
 notification_limit = 5
 
-# Size
+# Размеры
 width = 360
 height = (0, 120)
 padding = 12
@@ -16,16 +16,12 @@ frame_color = "#3a3a3a"
 corner_radius = 10
 separator_height = 0
 
-# visual
+# Внешний вид (твоя тема)
 background = "#2a2a2a"
 foreground = "#e6e6e6"
 font = JetBrainsMono Nerd Font 11
 
-# Icons
-icon_position = left
-enable_recursive_icon_lookup = true
-
-# Action
+# Поведение
 timeout = 5
 markup = full
 ellipsize = middle
@@ -33,7 +29,11 @@ word_wrap = yes
 stack_duplicates = true
 hide_duplicate_count = false
 
-# Mouse clicks
+# Иконки
+icon_position = left
+enable_recursive_icon_lookup = true
+
+# Мышь
 mouse_left_click = do_action
 mouse_middle_click = close_current
 mouse_right_click = close_current
