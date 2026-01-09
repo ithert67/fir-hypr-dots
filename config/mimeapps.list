@@ -10,4 +10,5 @@ x-scheme-handler/tg=userapp-AyuGram Desktop-U79BI3.desktop;
 x-scheme-handler/tonsite=userapp-AyuGram Desktop-NFKCI3.desktop;
 image/png=org.gnome.Loupe.desktop;org.kde.gwenview.desktop;userapp-mpv-3Y3NI3.desktop;
 image/jpeg=org.gnome.Loupe.desktop;
-text/markdown=obsidian.desktop;
+text/markdown=micro.desktop;obsidian.desktop;
+video/mp4=com.github.rafostar.Clapper.desktop;

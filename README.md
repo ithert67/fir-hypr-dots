@@ -1,2 +1,3 @@
 # fir-hypr-dots
-just my hyprland for CachyOS(or any arch based) 
+Put all in the "config" directory in your `~/.config/`
+"scripts" to the `~/.local/bin/`
