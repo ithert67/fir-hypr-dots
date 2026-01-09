@@ -1,2 +1,2 @@
 # fir-hypr-dots
-just my hyprland on CachyOS(arch-based) 
+just my hyprland for CachyOS(or any arch based) 

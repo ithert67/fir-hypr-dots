@@ -1,0 +1,122 @@
+{
+  "layer": "top",
+  "position": "top",
+  "output": ["DP-2"],
+  "height": 30,
+  "spacing": 8,
+
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "temperature",
+    "memory",
+    "cpu"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "hyprland/language",
+    "custom/dnd",
+    "clock",
+    "network",
+    "bluetooth",
+    "custom/power",
+    "tray"
+  ],
+
+  "bluetooth": {
+  "format": "",
+  "format-connected": " {num_connections}",
+  "tooltip": false,
+  "on-click": "blueman-manager"
+},
+
+  "custom/launcher": {
+    "format": "󰣇",
+    "tooltip": false,
+    "on-click": "wofi --show drun"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "0",
+      "default": "•"
+    },
+    "persistent-workspaces": {
+      "*": 10
+    },
+    "disable-scroll": true
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "󰍛 {used:0.1f}GiB",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "󰝟 muted",
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+  "hyprland/language": {
+    "format": "  {short}",
+    "tooltip": false,
+    "on-click": "hyprctl switchxkblayout \"semico---usb-gaming-keyboard--keyboard\" next"
+  },
+  
+"custom/dnd": {
+  "exec": "bash -lc 'if [ \"$(dunstctl is-paused)\" = \"true\" ]; then echo \"{\\\"text\\\":\\\" \\\",\\\"class\\\":\\\"paused\\\"}\"; else echo \"{\\\"text\\\":\\\"\\\",\\\"class\\\":\\\"on\\\"}\"; fi'",
+  "return-type": "json",
+  "format": "{}",
+  "interval": 1,
+  "on-click": "dunstctl set-paused toggle",
+  "tooltip": false
+},
+
+  "clock": {
+    "format": "  {:%H:%M}",
+    "format-alt": "  {:%Y-%m-%d}",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  on",
+    "format-disconnected": "󰖪 off",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  }
+}
